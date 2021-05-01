@@ -59,7 +59,6 @@ const TatiesApp = () => {
           <Notes darkMode={darkMode}>
             <h2>Mes notes{' '}<span role="img" aria-hidden>💭</span></h2>
           </Notes>)}
-
       </div>
 
     </main >
