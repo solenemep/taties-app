@@ -4,16 +4,19 @@ const AddToBuy = (props) => {
   const { darkMode, toBuyList, addToBuy, setFilter } = props
 
   const populars = [
-    { text: "bread", emoji: "🥖" },
-    { text: "milk", emoji: "🥛" },
-    { text: "pizza", emoji: "🍕" },
+    { text: "pain", emoji: "🥖" },
+    { text: "lait", emoji: "🥛" },
+    { text: "pommes", emoji: "🍏" },
+    { text: "oinions", emoji: "🧅" },
     { text: "salade", emoji: "🥬" },
-    { text: "orange", emoji: "🍊" },
-    { text: "rice", emoji: "🍚" },
-    { text: "chocolate", emoji: "🍫" },
-    { text: "cheese", emoji: "🧀" },
-    { text: "wine", emoji: "🍷" },
-    { text: "grappes", emoji: "🍇" }
+    { text: "café", emoji: "☕️" },
+    { text: "ail", emoji: "🧄" },
+    { text: "oranges", emoji: "🍊" },
+    { text: "riz", emoji: "🍚" },
+    { text: "chocolat", emoji: "🍫" },
+    { text: "avocat", emoji: "🥑" },
+    { text: "vin", emoji: "🍷" },
+    { text: "kiwi", emoji: "🥝" }
   ]
 
   const handleFormSubmit = (event) => {

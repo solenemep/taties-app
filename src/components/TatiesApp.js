@@ -41,13 +41,24 @@ const TatiesApp = () => {
 
         <div className='d-flex flex-row justify-content-between align-items-center my-3'>
           <DarkMode darkMode={darkMode} changeDarkMode={changeDarkMode} />
-          <p className='lead m-0'>TATIES de la playa del Puente</p>
-          <SelectMode darkMode={darkMode} mode={mode} selectMode={selectMode} />
+          <h1 className='m-0'>TATIES de la playa del Puente</h1>
+
         </div>
 
-        {mode === 'ToDo' && (<ToDo darkMode={darkMode} />)}
-        {mode === 'ToBuy' && (<ToBuy darkMode={darkMode} />)}
-        {mode === 'Notes' && (<Notes darkMode={darkMode} />)}
+        <SelectMode darkMode={darkMode} mode={mode} selectMode={selectMode} />
+
+        {mode === 'ToDo' && (
+          <ToDo darkMode={darkMode}>
+            <h2>Ma liste de tâches</h2>
+          </ToDo>)}
+        {mode === 'ToBuy' && (
+          <ToBuy darkMode={darkMode}>
+            <h2>Ma liste de courses</h2>
+          </ToBuy>)}
+        {mode === 'Notes' && (
+          <Notes darkMode={darkMode}>
+            <h2>Mes notes</h2>
+          </Notes>)}
 
       </div>
 

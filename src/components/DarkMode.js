@@ -31,7 +31,7 @@ const DarkMode = (props) => {
       aria-label="Dark Mode"
       onClick={changeDarkMode}
     >
-      {darkMode ? <Sun> Light Mode</Sun> : <Moon> Dark Mode</Moon>}
+      {darkMode ? <Sun></Sun> : <Moon></Moon>}
     </button>)
 }
 export default DarkMode

@@ -5,7 +5,7 @@ import AddToBuy from './componentsToBuy/AddToBuy'
 import { v4 as uuidv4 } from "uuid"
 
 const ToBuy = (props) => {
-  const { darkMode } = props
+  const { darkMode, children } = props
 
   // ToDos
   const [toBuyList, setToBuyList] = useState(JSON.parse(localStorage.getItem('solenemhepTatiesToBuy')) || [])
@@ -34,6 +34,7 @@ const ToBuy = (props) => {
 
   return (
     <React.Fragment>
+      {children}
       <AddToBuy
         darkMode={darkMode}
         toBuyList={toBuyList}

@@ -5,7 +5,7 @@ import AddToDo from './componentsToDo/AddToDo'
 import { v4 as uuidv4 } from "uuid"
 
 const ToDo = (props) => {
-  const { darkMode } = props
+  const { darkMode, children } = props
 
   // ToDos
   const [toDoList, setToDoList] = useState(JSON.parse(localStorage.getItem('solenemhepTatiesToDo')) || [])
@@ -52,6 +52,7 @@ const ToDo = (props) => {
 
   return (
     <React.Fragment>
+      {children}
       <AddToDo
         darkMode={darkMode}
         toDoList={toDoList}

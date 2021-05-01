@@ -1,3 +1,5 @@
+import React from "react"
+
 const AddToDo = (props) => {
   const { darkMode, toDoList, addToDo, setFilter } = props
 
@@ -14,18 +16,20 @@ const AddToDo = (props) => {
   }
 
   return (
-    <form className="input-group mb-3" onSubmit={handleFormSubmit}>
+    <React.Fragment>
+      <form className="input-group mb-3" onSubmit={handleFormSubmit}>
 
-      <label className={darkMode ? 'input-group-text border border-secondary bg-dark text-white' : 'input-group-text border bg-light text-dark'} htmlFor="toDo">
-        Ajouter une tâche
+        <label className={darkMode ? 'input-group-text border border-secondary bg-dark text-white' : 'input-group-text border bg-light text-dark'} htmlFor="toDo">
+          Ajouter une tâche
         </label>
-      <input className={darkMode ? 'form-control border border-secondary bg-dark text-white' : 'form-control border bg-light text-dark'} id="toDo" required />
+        <input className={darkMode ? 'form-control border border-secondary bg-dark text-white' : 'form-control border bg-light text-dark'} id="toDo" required />
 
-      <button type="submit" className={darkMode ? 'btn border border-secondary btn-dark text-white' : 'btn border btn-light text-dark'}>
-        Ajouter
+        <button type="submit" className={darkMode ? 'btn border border-secondary btn-dark text-white' : 'btn border btn-light text-dark'}>
+          Ajouter
       </button>
 
-    </form>
+      </form>
+    </React.Fragment>
   )
 }
 export default AddToDo
