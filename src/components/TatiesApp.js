@@ -41,7 +41,7 @@ const TatiesApp = () => {
 
         <div className='d-flex flex-row justify-content-between align-items-center my-3'>
           <DarkMode darkMode={darkMode} changeDarkMode={changeDarkMode} />
-          <h1 className='m-0'>TATIES de la playa del Puente</h1>
+          <h1 className='m-0'>TATIES del Puente</h1>
 
         </div>
 
