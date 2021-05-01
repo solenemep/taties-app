@@ -1,8 +1,12 @@
 body {
   margin: 0;
-  font-family: "Original Surfer", sans-serif;
+  font-family: "Indie Flower", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-family: 'Indie Flower', sans-serif;
 }
 
 code {
