@@ -46,7 +46,7 @@ const ToBuy = (props) => {
         filter={filter}
         setFilter={setFilter} />
 
-      <div className={darkMode ? 'card shadow border border-secondary bg-dark' : 'card shadow border bg-white'}>
+      <div className={darkMode ? 'card shadow border border-secondary bg-dark text-white' : 'card shadow border bg-white text-dark'}>
         <ToBuyList
           darkMode={darkMode}
           toBuyList={filteredToBuyList}

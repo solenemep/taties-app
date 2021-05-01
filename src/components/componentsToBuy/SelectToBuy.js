@@ -10,8 +10,8 @@ const SelectToBuy = (props) => {
         type="search"
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
-        placeholder="Search ..."
-        aria-label="Search"
+        placeholder="Rechercher ..."
+        aria-label="Rechercher"
         className={darkMode ? 'form-control border border-secondary bg-dark text-white' : 'form-control border bg-white text-dark'}
       />
     </form>

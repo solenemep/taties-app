@@ -64,7 +64,7 @@ const ToDo = (props) => {
         filter={filter}
         setFilter={setFilter} />
 
-      <div className={darkMode ? 'card shadow border border-secondary bg-dark' : 'card shadow border bg-white'}>
+      <div className={darkMode ? 'card shadow border border-secondary bg-dark text-white' : 'card shadow border bg-white text-dark'}>
         <ToDoList
           darkMode={darkMode}
           toDoList={filteredToDoList}

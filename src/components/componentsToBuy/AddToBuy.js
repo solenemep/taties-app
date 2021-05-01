@@ -50,7 +50,7 @@ const AddToBuy = (props) => {
         {populars.map((popular) => (
           <button
             key={popular.text}
-            className={darkMode ? 'btn border border-secondary btn-dark text-white m-1' : 'btn border btn-light text-dark m-1'}
+            className={darkMode ? 'btn btn-sm border border-secondary btn-dark text-white m-1' : 'btn btn-sm border btn-light text-dark m-1'}
             onClick={() => addToBuy(popular.text)}
             disabled={toBuyList.some(el => el.text === popular.text)}
           >
