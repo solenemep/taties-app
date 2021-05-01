@@ -20,9 +20,9 @@ const AddToDo = (props) => {
       <form className="input-group mb-3" onSubmit={handleFormSubmit}>
 
         <label className={darkMode ? 'input-group-text border border-secondary bg-dark text-white' : 'input-group-text border bg-light text-dark'} htmlFor="toDo">
-          Ajouter une tâche
+          <span role="img" aria-hidden>➕</span>
         </label>
-        <input className={darkMode ? 'form-control border border-secondary bg-dark text-white' : 'form-control border bg-light text-dark'} id="toDo" required />
+        <input className={darkMode ? 'form-control border border-secondary bg-dark text-white' : 'form-control border bg-white text-dark'} id="toDo" required />
 
         <button type="submit" className={darkMode ? 'btn border border-secondary btn-dark text-white' : 'btn border btn-light text-dark'}>
           Ajouter

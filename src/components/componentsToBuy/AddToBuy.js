@@ -36,7 +36,7 @@ const AddToBuy = (props) => {
       <form className="input-group" onSubmit={handleFormSubmit}>
 
         <label className={darkMode ? 'input-group-text border border-secondary bg-dark text-white' : 'input-group-text border bg-light text-dark'} htmlFor="toBuy">
-          Ajouter un produit
+          <span role="img" aria-hidden>➕</span>
         </label>
         <input className={darkMode ? 'form-control border border-secondary bg-dark text-white' : 'form-control border bg-white text-dark'} id="toBuy" required />
 
