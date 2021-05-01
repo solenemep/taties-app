@@ -1182,6 +1182,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/indie-flower/-/indie-flower-4.2.2.tgz#2cc7244be2907c2e89d214f8b71aaee101f8f36c"
   integrity sha512-zNVSWAJYz9f9kNis/2eHtS5YId0Ix+wcpSiGuZjOAUQv5CWxJevszcZaey4Y7fZGafXX6Cw9J2J5RLhRrFFW2A==
 
+"@fontsource/original-surfer@^4.2.3":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/original-surfer/-/original-surfer-4.2.3.tgz#86e0f933417eebc52ea1d028cbe301549bc92940"
+  integrity sha512-KRrTQMQ/8R8LEU/sHNN81bLjwEdVmSqQ2fpMGizonB1c/EXVv/REmK1xDOXwKUBaQopDsWcYrmavD4jsgjQDvg==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"

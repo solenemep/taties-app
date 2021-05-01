@@ -29,7 +29,7 @@ const TatiesApp = () => {
   )
 
   // Background
-  const backgroundImage = darkMode ? 'linear-gradient(to top, #30cfd0 0%, #330867 100%)' : 'linear-gradient(to top, rgb(255, 27, 27), rgb(255, 171, 96))'
+  const backgroundImage = darkMode ? 'linear-gradient(to top, #330867 0%, #30cfd0 100%)' : 'linear-gradient(to top, rgb(255, 27, 27), rgb(255, 171, 96))'
   const style = {
     backgroundImage
   }
