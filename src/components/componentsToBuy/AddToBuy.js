@@ -4,8 +4,6 @@ const AddToBuy = (props) => {
   const { darkMode, toBuyList, addToBuy, setFilter } = props
 
   const populars = [
-    { text: "pain", emoji: "🥖" },
-    { text: "lait", emoji: "🥛" },
     { text: "pommes", emoji: "🍏" },
     { text: "oinions", emoji: "🧅" },
     { text: "salade", emoji: "🥬" },
@@ -16,7 +14,9 @@ const AddToBuy = (props) => {
     { text: "chocolat", emoji: "🍫" },
     { text: "avocat", emoji: "🥑" },
     { text: "vin", emoji: "🍷" },
-    { text: "kiwi", emoji: "🥝" }
+    { text: "kiwi", emoji: "🥝" },
+    { text: "pq", emoji: "🧻" },
+    { text: "tomates", emoji: "🍅" }
   ]
 
   const handleFormSubmit = (event) => {
@@ -41,7 +41,7 @@ const AddToBuy = (props) => {
         <input type="text" className={darkMode ? 'form-control border-myblack bg-dark text-white' : 'form-control border bg-white text-dark'} id="toBuy" required />
 
         <button type="submit" className={darkMode ? 'btn border-myblack btn-myblack text-white' : 'btn border btn-light text-dark'}>
-          Ajouter
+          ajouter
       </button>
 
       </form>

@@ -4,7 +4,7 @@ const ToDoList = (props) => {
   return toDoList.map((el) => {
     return (
       <li className={darkMode ? "list-group-item bg-dark text-white p-2 d-flex align-items-center justify-content-between" : "list-group-item bg-white text-dark p-2 d-flex align-items-center justify-content-between"} key={el}>
-        <span className="ms-3" style={el.isCompleted ? { textDecoration: 'line-through' } : { textDecoration: 'none' }}>{el.text}</span>
+        <span className="ms-1" style={el.isCompleted ? { textDecoration: 'line-through' } : { textDecoration: 'none' }}>{el.text}</span>
         <div className="btn-group">
           {el.isCompleted ? (
             <button
@@ -12,7 +12,7 @@ const ToDoList = (props) => {
               type="button"
               onClick={() => completeToDo(el)}
             >
-              Rétablir</button>
+              rétablir</button>
           ) : (
             <button
               className="btn btn-info btn-sm"

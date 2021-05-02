@@ -12,9 +12,9 @@ const SelectToDo = (props) => {
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
       >
-        <option value="all">Toutes</option>
-        <option value="completed">Finies</option>
-        <option value="inprogress">En cours</option>
+        <option value="all">toutes</option>
+        <option value="completed">terminées</option>
+        <option value="inprogress">en cours</option>
       </select>
     </form>
   )

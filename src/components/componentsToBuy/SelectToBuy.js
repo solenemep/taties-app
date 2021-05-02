@@ -11,7 +11,7 @@ const SelectToBuy = (props) => {
         type="search"
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
-        placeholder="Rechercher ..."
+        placeholder="rechercher ..."
         aria-label="search"
         className={darkMode ? 'form-control border-myblack bg-dark text-white' : 'form-control border bg-white text-dark'}
       />

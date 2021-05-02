@@ -2,6 +2,8 @@ import React from "react"
 import ReactDOM from "react-dom"
 import "bootstrap/dist/css/bootstrap.css"
 import "@fontsource/indie-flower"
+import "@fontsource/patrick-hand"
+import "@fontsource/patrick-hand-sc"
 import "./index.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';

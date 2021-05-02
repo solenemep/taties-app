@@ -25,7 +25,7 @@ const AddToDo = (props) => {
         <input className={darkMode ? 'form-control border-myblack bg-dark text-white' : 'form-control border bg-white text-dark'} id="toDo" required />
 
         <button type="submit" className={darkMode ? 'btn border-myblack btn-myblack text-white' : 'btn border btn-light text-dark'}>
-          Ajouter
+          ajouter
       </button>
 
       </form>

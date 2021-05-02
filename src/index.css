@@ -1,12 +1,14 @@
 body {
   margin: 0;
-  font-family: "Indie Flower", sans-serif;
+  font-family: 'Patrick Hand SC', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2 {
-  font-family: 'Indie Flower', sans-serif;
+  font-family: 'Patrick Hand SC', cursive;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
 }
 
 code {
