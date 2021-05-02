@@ -3,7 +3,7 @@ const ToBuyList = (props) => {
 
   return toBuyList.map((el) => {
     return (
-      <li className={darkMode ? "list-group-item bg-dark text-white p-2 d-flex align-items-center justify-content-between" : "list-group-item bg-white text-dark p-2 d-flex align-items-center justify-content-between"} key={el}>
+      <li className={darkMode ? "list-group-item bg-dark text-white p-2 d-flex align-items-center justify-content-between" : "list-group-item bg-white text-dark p-2 d-flex align-items-center justify-content-between"} key={el.id}>
         <span className="ms-1">{el.text}</span>
         <button
           className="btn btn-sm btn-warning"
