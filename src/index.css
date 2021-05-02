@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.125rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
