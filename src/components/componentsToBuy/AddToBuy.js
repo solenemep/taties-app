@@ -22,7 +22,7 @@ const AddToBuy = (props) => {
   const handleFormSubmit = (event) => {
     event.preventDefault()
     const newToBuyText = event.target.elements.toBuy.value
-    if (toBuyList.some(el => el.text === newToBuyText)) {
+    if (toBuyList.some(el => el.text.trim().toLowerCase() === newToBuyText.trim().toLowerCase())) {
       alert(`${newToBuyText} is already on the list`)
     } else {
       addToBuy(newToBuyText)

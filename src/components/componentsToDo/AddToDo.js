@@ -6,7 +6,7 @@ const AddToDo = (props) => {
   const handleFormSubmit = (event) => {
     event.preventDefault()
     const newToDoText = event.target.elements.toDo.value
-    if (toDoList.some(el => el.text === newToDoText)) {
+    if (toDoList.some(el => el.text.trim().toLowerCase() === newToDoText.trim().toLowerCase())) {
       alert(`${newToDoText} is already on the list`)
     } else {
       addToDo(newToDoText)
