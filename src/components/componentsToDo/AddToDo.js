@@ -22,7 +22,7 @@ const AddToDo = (props) => {
         <label className={darkMode ? 'input-group-text border-myblack bg-myblack text-white' : 'input-group-text border bg-light text-dark'} htmlFor="toDo">
           <span role="img" aria-hidden>➕</span>
         </label>
-        <input className={darkMode ? 'form-control border-myblack bg-dark text-white' : 'form-control border bg-white text-dark'} id="toDo" aria-label="toDo" required />
+        <input className={darkMode ? 'form-control border-myblack bg-dark text-white' : 'form-control border bg-white text-dark'} id="toDo" aria-label="toDo" name="toDo" required />
 
         <button type="submit" className={darkMode ? 'btn border-myblack btn-myblack text-white' : 'btn border btn-light text-dark'}>
           ajouter
