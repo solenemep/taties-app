@@ -39,7 +39,7 @@ const TatiesApp = () => {
 
       <div className='container min-vh-100 py-3'>
 
-        <div className='d-flex flex-row justify-content-between align-items-center my-3'>
+        <div className='d-flex flex-row justify-content-between align-items-center mb-3'>
           <DarkMode darkMode={darkMode} changeDarkMode={changeDarkMode} />
           <h1 className='m-0'>TATIES<span role="img" aria-hidden>🥂</span> del Puente</h1>
 

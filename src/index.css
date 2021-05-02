@@ -19,3 +19,12 @@ code {
     scroll-behavior: smooth;
   }
 }
+.bg-myblack {
+  background-color: #171717;
+}
+.btn-myblack {
+  background-color: #171717;
+}
+.border-myblack {
+  border :1px solid #000000 ;
+}

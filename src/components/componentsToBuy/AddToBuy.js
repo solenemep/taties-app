@@ -33,14 +33,14 @@ const AddToBuy = (props) => {
 
   return (
     <React.Fragment>
-      <form className="input-group" onSubmit={handleFormSubmit}>
+      <form className="input-group input-group-lg" onSubmit={handleFormSubmit}>
 
-        <label className={darkMode ? 'input-group-text border border-secondary bg-dark text-white' : 'input-group-text border bg-light text-dark'} htmlFor="toBuy">
+        <label className={darkMode ? 'input-group-text border-myblack bg-myblack text-white' : 'input-group-text border bg-light text-dark'} htmlFor="toBuy">
           <span role="img" aria-hidden>➕</span>
         </label>
-        <input className={darkMode ? 'form-control border border-secondary bg-dark text-white' : 'form-control border bg-white text-dark'} id="toBuy" required />
+        <input type="text" className={darkMode ? 'form-control border-myblack bg-dark text-white' : 'form-control border bg-white text-dark'} id="toBuy" required />
 
-        <button type="submit" className={darkMode ? 'btn border border-secondary btn-dark text-white' : 'btn border btn-light text-dark'}>
+        <button type="submit" className={darkMode ? 'btn border-myblack btn-myblack text-white' : 'btn border btn-light text-dark'}>
           Ajouter
       </button>
 
@@ -50,7 +50,7 @@ const AddToBuy = (props) => {
         {populars.map((popular) => (
           <button
             key={popular.text}
-            className={darkMode ? 'btn btn-sm border border-secondary btn-dark text-white m-1' : 'btn btn-sm border btn-light text-dark m-1'}
+            className={darkMode ? 'btn border-myblack btn-myblack text-white m-1' : 'btn border btn-light text-dark m-1'}
             onClick={() => addToBuy(popular.text)}
             disabled={toBuyList.some(el => el.text === popular.text)}
           >
