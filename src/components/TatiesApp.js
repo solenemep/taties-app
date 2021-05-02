@@ -49,15 +49,15 @@ const TatiesApp = () => {
 
         {mode === 'ToDo' && (
           <ToDo darkMode={darkMode}>
-            <h2>Ma liste de tâches{' '}<span role="img" aria-hidden>✏️</span></h2>
+            <h2 className="mb-3">Ma liste de tâches{' '}<span role="img" aria-hidden>✏️</span></h2>
           </ToDo>)}
         {mode === 'ToBuy' && (
           <ToBuy darkMode={darkMode}>
-            <h2>Ma liste de courses{' '}<span role="img" aria-hidden>🍇</span></h2>
+            <h2 className="mb-3">Ma liste de courses{' '}<span role="img" aria-hidden>🍇</span></h2>
           </ToBuy>)}
         {mode === 'Notes' && (
           <Notes darkMode={darkMode}>
-            <h2>Mes notes{' '}<span role="img" aria-hidden>💭</span></h2>
+            <h2 className="mb-3">Mes notes{' '}<span role="img" aria-hidden>💭</span></h2>
           </Notes>)}
       </div>
 
