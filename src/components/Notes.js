@@ -16,9 +16,9 @@ const Notes = (props) => {
       <form>
         <textarea
           value={note}
-          rows='20'
+          rows='16'
           onChange={(e) => setNote(e.target.value)}
-          className={darkMode ? 'form-control border-myblack bg-dark text-white' : 'form-control border bg-white text-dark'}
+          className={darkMode ? 'form-control form-control-lg border-myblack bg-dark text-white' : 'form-control form-control-lg border bg-white text-dark'}
         />
       </form>
     </React.Fragment>
