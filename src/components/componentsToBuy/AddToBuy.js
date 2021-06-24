@@ -86,7 +86,9 @@ const AddToBuy = (props) => {
             }
             onClick={() => addToBuy(popular.text)}
             disabled={toBuyList.some(
-              (el) => el.text.trim().toLowerCase() === popular.text
+              (el) =>
+                el.text.trim().toLowerCase() ===
+                popular.text.trim().toLocaleLowerCase()
             )}
           >
             {popular.text}{" "}
