@@ -1,36 +1,37 @@
-import React, { useState, useEffect } from "react"
-import SelectToBuy from './componentsToBuy/SelectToBuy'
-import ToBuyList from './componentsToBuy/ToBuyList'
-import AddToBuy from './componentsToBuy/AddToBuy'
-import { v4 as uuidv4 } from "uuid"
+import React, { useState, useEffect } from "react";
+import SelectToBuy from "./componentsToBuy/SelectToBuy";
+import ToBuyList from "./componentsToBuy/ToBuyList";
+import AddToBuy from "./componentsToBuy/AddToBuy";
+import { v4 as uuidv4 } from "uuid";
 
 const ToBuy = (props) => {
-  const { darkMode, children } = props
+  const { darkMode, children } = props;
 
   // ToDos
-  const [toBuyList, setToBuyList] = useState(JSON.parse(localStorage.getItem('solenemhepTatiesToBuy')) || [])
+  const [toBuyList, setToBuyList] = useState(
+    JSON.parse(localStorage.getItem("solenemepTatiesToBuy")) || []
+  );
 
   const addToBuy = (text) => {
     const newToBuy = {
       text,
-      id: uuidv4()
-    }
-    setToBuyList([...toBuyList, newToBuy])
-  }
+      id: uuidv4(),
+    };
+    setToBuyList([...toBuyList, newToBuy]);
+  };
   const deleteToBuy = (product) => {
-    setToBuyList(toBuyList.filter((el) => el.id !== product.id))
-  }
+    setToBuyList(toBuyList.filter((el) => el.id !== product.id));
+  };
   useEffect(() => {
-    localStorage.setItem('solenemhepTatiesToBuy', JSON.stringify(toBuyList))
-  }, [toBuyList])
+    localStorage.setItem("solenemepTatiesToBuy", JSON.stringify(toBuyList));
+  }, [toBuyList]);
 
   // Filter
-  const [filter, setFilter] = useState('')
-
+  const [filter, setFilter] = useState("");
 
   const filteredToBuyList = toBuyList.filter((el) =>
     el.text.trim().toLowerCase().startsWith(filter.trim().toLowerCase())
-  )
+  );
 
   return (
     <React.Fragment>
@@ -39,23 +40,25 @@ const ToBuy = (props) => {
         darkMode={darkMode}
         toBuyList={toBuyList}
         addToBuy={addToBuy}
-        setFilter={setFilter} />
+        setFilter={setFilter}
+      />
 
-      <SelectToBuy
-        darkMode={darkMode}
-        filter={filter}
-        setFilter={setFilter} />
+      <SelectToBuy darkMode={darkMode} filter={filter} setFilter={setFilter} />
 
-      <div className={darkMode ? 'card shadow border-myblack' : 'card shadow border'}>
+      <div
+        className={
+          darkMode ? "card shadow border-myblack" : "card shadow border"
+        }
+      >
         <ul className="list-group">
           <ToBuyList
             darkMode={darkMode}
             toBuyList={filteredToBuyList}
-            deleteToBuy={deleteToBuy} />
+            deleteToBuy={deleteToBuy}
+          />
         </ul>
       </div>
     </React.Fragment>
-  )
-
-}
-export default ToBuy
+  );
+};
+export default ToBuy;

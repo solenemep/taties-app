@@ -1,40 +1,32 @@
-import React from "react"
+import React from "react";
 
 const AddToBuy = (props) => {
-  const { darkMode, toBuyList, addToBuy, setFilter } = props
+  const { darkMode, toBuyList, addToBuy, setFilter } = props;
 
   const populars = [
-    { text: "pommes", emoji: "🍏" },
-    { text: "oinions", emoji: "🧅" },
     { text: "salade", emoji: "🥬" },
     { text: "café", emoji: "☕️" },
-    { text: "ail", emoji: "🧄" },
     { text: "oranges", emoji: "🍊" },
-    { text: "riz", emoji: "🍚" },
     { text: "chocolat", emoji: "🍫" },
-    { text: "avocat", emoji: "🥑" },
     { text: "vin", emoji: "🍷" },
-    { text: "kiwi", emoji: "🥝" },
-    { text: "pq", emoji: "🧻" },
-    { text: "tomates", emoji: "🍅" },
-  ]
+  ];
 
   const handleFormSubmit = (event) => {
-    event.preventDefault()
-    const newToBuyText = event.target.elements.toBuy.value
+    event.preventDefault();
+    const newToBuyText = event.target.elements.toBuy.value;
     if (
       toBuyList.some(
         (el) =>
           el.text.trim().toLowerCase() === newToBuyText.trim().toLowerCase()
       )
     ) {
-      alert(`${newToBuyText} is already on the list`)
+      alert(`${newToBuyText} is already on the list`);
     } else {
-      addToBuy(newToBuyText)
+      addToBuy(newToBuyText);
     }
-    event.target.reset()
-    setFilter("")
-  }
+    event.target.reset();
+    setFilter("");
+  };
 
   return (
     <React.Fragment>
@@ -88,7 +80,7 @@ const AddToBuy = (props) => {
             disabled={toBuyList.some(
               (el) =>
                 el.text.trim().toLowerCase() ===
-                popular.text.trim().toLocaleLowerCase()
+                popular.text.trim().toLowerCase()
             )}
           >
             {popular.text}{" "}
@@ -99,6 +91,6 @@ const AddToBuy = (props) => {
         ))}
       </div>
     </React.Fragment>
-  )
-}
-export default AddToBuy
+  );
+};
+export default AddToBuy;
